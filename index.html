@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IT Glue HTML/CSS Challenge</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This is an HTML/CSS exercise done for IT Glue interview" />
+	<meta name="keywords" content="HTML, CSS, responsive, IT Glue" />
+	
+	<!-- html5shiv.js for IE6-8 support of HTML5 elements, and Respond.min.js for min/max-width CSS3 Media Queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+	
+
+	
+	<!-- Normalize.css makes browsers render all elements more consistently and in line with modern standards -->
+	<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+	
+	<!-- custom styles -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" />	
+	<link href="css/mobile.css" rel="stylesheet" type="text/css" />    
+</head>
+<body>
+	
+	<header id="pageTitle"><h1 class="mainContainer">Invoice Builder</h1></header>
+		
+			
+	<main class="mainContainer">	
+			<form id="mainForm" name="invoiceForm" action="#" method="post">
+				
+				<div id="formContent">
+					
+					<header>
+			
+						<article id="logoBlock">
+							<section id="addLogo"><a href="#">Add your Logo</a></section>
+							<section id="invoiceNum">
+								<h2>Invoice</h2>
+								<input type="text" name="invoiceNumber" placeholder="Invoice Number" />
+							</section>
+						</article>
+						
+						<article id="billBlock">
+							  <article>
+								    <label for="name">Bill To</label><br />
+									<textarea cols="32" rows="3" name="textarea" id="company" placeholder="Who is this invoice to"></textarea>
+							   </article>
+							   
+							   <article id="dueDate">
+								    <label for="date">Due Date</label><br />
+								    <div class="dueDate">
+									    <input type="date" name="duedate" class="date" value="">
+									    <button class="datePicker">
+								    </div>
+							   </article>
+						</article>
+						
+					</header>
+
+					<article id="inventory">
+						<table>
+							<thead>
+								<tr>
+									<th><span>Item</span></th>
+									<th><span>Quantity</span></th>
+									<th><span>Price</span></th>
+									<th><span>Total</span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<label for="name">who</label>
+										<div><input type="text" name="company" placeholder="Who is this invoice to"></div>
+					    			</td>
+									<td><label for="quantity">quantity</label>
+										<div><input type="number" name="quantity" class="quantity"></div></td>
+									<td><label for="price">price</label>
+										<div class="priceRow"><span data-prefix>$</span><input type="number" name="price" class="price" placeholder="0"></div></td>
+									<td><span data-prefix>$</span><span>0</span></td>
+								</tr>
+							</tbody>
+						</table>
+						<section id="addLine"><a href="#" onclick="addLine()">Line Item</a></section>
+					</article>
+					
+					<article id="balance">
+						<table>
+							<tr>
+								<th>Subtotal</th>
+								<td><span data-prefix>$</span><span>0</span></td>
+							</tr>
+							<tr>
+								<th>Tax (5%)</th>
+								<td><span data-prefix>$</span>0</td>
+							</tr>
+							
+							<tr>
+								<td colspan="2" height="40"><div class="sepaLine"></div></td>
+							</tr>
+							<tr>
+								<th>Grand Total</th>
+								<td><span data-prefix>$</span><span>0</span></td>
+							</tr>
+						</table>
+					</article>
+					
+					<article id="notes">
+					    <label for="textarea">Notes</label><br />
+					    <textarea cols="100" rows="8" name="textarea" id="textarea" placeholder="Notes - any relevant information not already covered"></textarea>
+					</article>	
+					
+				</div><!-- end of #formContent -->
+				
+				<div id="submitButton">
+				    <button>Send Invoice</button> 
+				    <div class="currency">Currency: <strong>USD</strong></div>
+				</div><!-- end of #submitButton -->
+				
+			</form><!-- end of #mainForm -->
+	</main><!-- end of #mainContainer -->
+		
+	<script src="js/custom.js"></script>
+</body>
+</html>

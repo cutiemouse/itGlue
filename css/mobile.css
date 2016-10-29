@@ -1,0 +1,143 @@
+@media only screen and (min-width:960px){
+	#invoiceNum{
+		width:50%;
+		max-width: 161px;
+	}
+	
+	#billBlock article:first-child{
+		max-width: 25rem;
+	}
+	
+	#billBlock article:last-child{
+		max-width:161px;
+	}
+
+}
+
+@media only screen and (min-width:480px){
+	#addLogo {
+	    max-width: 188px;
+	    font-size: 1.15rem;
+	}
+}
+
+@media only screen and (max-width:959px){
+	
+	h2{
+		font-size: 2rem;
+	}
+	main.mainContainer{
+		width:96%;
+		margin-top: 20px;
+	}
+	
+	#logoBlock input{
+		width:138px;
+	}
+	
+	#formContent{
+		padding:12px;
+	}
+	
+	
+	
+	#formContent,
+	#submitButton{
+		float:none;
+		clear:both;
+		width:100%;
+	}
+	
+	#submitButton{
+		text-align: center;
+		width:100%;
+	}
+	
+	#addLine{
+		margin-left: -12px;
+	}
+	
+	
+	
+	table td{
+		padding:15px 5px;
+	}
+	
+	#inventory th:first-child span{
+		display: none;
+	}
+	
+	#submitButton{
+		position: inherit;	
+		margin-top: 30px;
+	}
+		
+	#billBlock article:first-child,
+	#billBlock article:last-child{
+		width:100%;
+		float:none;
+		
+	}
+	#company,
+	#dueDate,
+	.dueDate{
+		width:100%;
+	}
+	
+}
+
+@media only screen and (max-width:767px){
+
+
+	#balance table{
+		width:60%;
+	}
+	#balance th,
+	#balance td{
+		width:45%;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width:599px){
+	#inventory td{
+		text-align: left;
+	}
+	
+	#inventory th:first-child,
+	#inventory td:first-child{
+		width:30%;
+	}
+	
+	
+	#inventory .quantity{
+		width:10%;
+	}
+	
+		
+}
+
+@media only screen and (max-width:479px){
+	#addLogo {
+	    font-size: 0.8rem;
+	    width:43%;
+	    padding: 28px 15px 28px 0;
+	}
+	
+	#addLogo a{
+		padding-left: 30px;
+	}
+	
+	#addLogo a::before{
+		margin-top: 27px;
+	}
+	h2{
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width:359px){
+	#addLogo {
+	    width:49%;
+	}
+}
