@@ -1,3 +1,11 @@
+/*
+Theme Name: IT Glue HTML&CSS Assessment - Mobile Themes
+Description: 
+Author: DEBBIE JIANG
+Author URL: http://www.design5.ca/
+Date Created: 10/28/2016
+*/
+
 @media only screen and (min-width:960px){
 	#invoiceNum{
 		width:50%;
@@ -10,6 +18,7 @@
 	
 	#billBlock section:last-child{
 		max-width:161px;
+		
 	}
 
 }
