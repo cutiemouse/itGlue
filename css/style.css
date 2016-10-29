@@ -125,6 +125,15 @@ button{
 	margin-bottom:20px;
 
 }
+	#addLogo:hover{
+		background:#e4e4e4;
+		cursor: pointer;
+	}
+	#addLine a:hover,
+	#submitButton button:hover{
+		cursor: pointer;
+		background:#000;	
+	}
 
 
 /* Header Style 
@@ -208,12 +217,9 @@ button{
 	width:161px;
 }
 
-
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder,
-:-moz-placeholder {
-	color:#e5e5e5;
+input[placeholder], [placeholder], *[placeholder] {
+   opacity:0.4;
+   filter:alpha(opacity=40);
 }
 /* bill block
 ***************************************************************/
@@ -226,12 +232,12 @@ button{
 	font:12px/140% arial, sans-serif;
 }
 
-#billBlock article:first-child{
+#billBlock section:first-child{
 	float:left;
 	width:50%;
 }
 
-#billBlock article:last-child{
+#billBlock section:last-child{
 	float:right;
 	width:50%;
 }
@@ -265,6 +271,12 @@ button{
 	position: absolute;
 	top:8px;
 	right:5px;
+}
+
+.datePicker:hover{
+	opacity:0.6;
+   filter:alpha(opacity=60);
+   cursor: pointer;
 }
 
 input[type="number"] {

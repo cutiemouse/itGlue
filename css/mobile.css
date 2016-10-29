@@ -4,11 +4,11 @@
 		max-width: 161px;
 	}
 	
-	#billBlock article:first-child{
+	#billBlock section:first-child{
 		max-width: 25rem;
 	}
 	
-	#billBlock article:last-child{
+	#billBlock section:last-child{
 		max-width:161px;
 	}
 
@@ -72,16 +72,21 @@
 		margin-top: 30px;
 	}
 		
-	#billBlock article:first-child,
-	#billBlock article:last-child{
+	#billBlock section:first-child,
+	#billBlock section:last-child{
 		width:100%;
 		float:none;
 		
 	}
+	
 	#company,
 	#dueDate,
 	.dueDate{
 		width:100%;
+	}
+	
+	#dueDate{
+		margin-top: 20px;
 	}
 	
 }
