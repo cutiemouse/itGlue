@@ -1,0 +1,22 @@
+name: Study Guardian macOS
+on:
+  push:
+    paths: ['StudyGuardian/**', '.github/workflows/study-guardian.yml']
+  pull_request:
+    paths: ['StudyGuardian/**', '.github/workflows/study-guardian.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-build-and-test:
+    runs-on: macos-14
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show Xcode version
+        run: xcodebuild -version
+      - name: Build native app and run XCTest
+        run: ./StudyGuardian/scripts/verify-macos.sh
+      - name: Run portable core tests
+        working-directory: StudyGuardian
+        run: swift test
